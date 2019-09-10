@@ -1,2 +1,5 @@
 <p>This is page holder</p>
-<app-poll-item></app-poll-item>
+<app-poll-item
+  *ngFor="let pollItem of pollItemCollection"
+  [item]="pollItem"
+></app-poll-item>
